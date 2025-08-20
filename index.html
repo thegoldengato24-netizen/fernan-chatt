@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Fernan Chat</title>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <h2>Chats</h2>
+    <div id="chat-list"></div>
+    <button id="new-chat">Nuevo Chat</button>
+    <button id="settings-btn">Ajustes</button>
+  </div>
+  <div id="chat-window">
+    <div id="messages"></div>
+    <input type="text" id="msg-input" placeholder="Escribe un mensaje...">
+    <button id="send-btn">Enviar</button>
+    <input type="file" id="file-input">
+  </div>
+</div>
+
+<div id="settings" class="hidden">
+  <h2>Ajustes</h2>
+  <label>Nombre: <input id="user-name"></label>
+  <label>Color del tema:
+    <select id="theme-select">
+      <option value="blue">Azul</option>
+      <option value="red">Rojo</option>
+      <option value="green">Verde</option>
+      <option value="purple">Morado</option>
+      <option value="orange">Naranja</option>
+    </select>
+  </label>
+  <button id="save-settings">Guardar</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>

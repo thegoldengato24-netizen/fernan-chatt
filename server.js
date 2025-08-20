@@ -1,4 +1,4 @@
-const express = require('express');
+cconst express = require('express');
 const app = express();
 const fs = require('fs');
 const path = require('path');
@@ -46,3 +46,6 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
+
+app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
+
